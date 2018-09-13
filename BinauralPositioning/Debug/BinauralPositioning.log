@@ -1,0 +1,31 @@
+﻿  main.cpp
+  TestMode.cpp
+  BinauralConvolution.cpp
+c:\users\gabriella\documents\visual studio 2015\projects\binauralpositioning\binauralpositioning\binauralconvolution.cpp(72): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  AudioStream.cpp
+  Generating Code...
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_GetErrorText referenced in function "public: void __thiscall AudioStream::cleaningUp(void)" (?cleaningUp@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_Initialize referenced in function "public: void __thiscall AudioStream::setupPlayback(void)" (?setupPlayback@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_Terminate referenced in function "public: void __thiscall AudioStream::cleaningUp(void)" (?cleaningUp@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_GetDefaultOutputDevice referenced in function "public: void __thiscall AudioStream::setupPlayback(void)" (?setupPlayback@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_GetDeviceInfo referenced in function "public: void __thiscall AudioStream::setupPlayback(void)" (?setupPlayback@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_OpenStream referenced in function "public: void __thiscall AudioStream::setupPlayback(void)" (?setupPlayback@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_CloseStream referenced in function "public: void __thiscall AudioStream::setupPlayback(void)" (?setupPlayback@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_StartStream referenced in function "public: void __thiscall AudioStream::setupPlayback(void)" (?setupPlayback@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_IsStreamActive referenced in function "public: void __thiscall AudioStream::setupPlayback(void)" (?setupPlayback@AudioStream@@QAEXXZ)
+AudioStream.obj : error LNK2019: unresolved external symbol _Pa_Sleep referenced in function "public: void __thiscall AudioStream::setupPlayback(void)" (?setupPlayback@AudioStream@@QAEXXZ)
+BinauralConvolution.obj : error LNK2019: unresolved external symbol "public: __thiscall CWavFile::CWavFile(void)" (??0CWavFile@@QAE@XZ) referenced in function "public: __thiscall BinauralConvolution::audioData::audioData(void)" (??0audioData@BinauralConvolution@@QAE@XZ)
+TestMode.obj : error LNK2001: unresolved external symbol "public: __thiscall CWavFile::CWavFile(void)" (??0CWavFile@@QAE@XZ)
+BinauralConvolution.obj : error LNK2019: unresolved external symbol "public: void __thiscall CWavFile::openWav(char *)" (?openWav@CWavFile@@QAEXPAD@Z) referenced in function "public: int __thiscall BinauralConvolution::controlFunction(void)" (?controlFunction@BinauralConvolution@@QAEHXZ)
+TestMode.obj : error LNK2001: unresolved external symbol "public: void __thiscall CWavFile::openWav(char *)" (?openWav@CWavFile@@QAEXPAD@Z)
+BinauralConvolution.obj : error LNK2019: unresolved external symbol "public: float __thiscall CWavFile::getSample(long)" (?getSample@CWavFile@@QAEMJ@Z) referenced in function "public: void __thiscall BinauralConvolution::filterProcessing(class CWavFile &,float * const,struct kiss_fft_cpx * const)" (?filterProcessing@BinauralConvolution@@QAEXAAVCWavFile@@QAMQAUkiss_fft_cpx@@@Z)
+TestMode.obj : error LNK2001: unresolved external symbol "public: float __thiscall CWavFile::getSample(long)" (?getSample@CWavFile@@QAEMJ@Z)
+BinauralConvolution.obj : error LNK2019: unresolved external symbol "public: long __thiscall CWavFile::getNumSamples(void)" (?getNumSamples@CWavFile@@QAEJXZ) referenced in function "public: int __thiscall BinauralConvolution::controlFunction(void)" (?controlFunction@BinauralConvolution@@QAEHXZ)
+TestMode.obj : error LNK2001: unresolved external symbol "public: long __thiscall CWavFile::getNumSamples(void)" (?getNumSamples@CWavFile@@QAEJXZ)
+BinauralConvolution.obj : error LNK2019: unresolved external symbol _kiss_fftr_alloc referenced in function "public: void __thiscall BinauralConvolution::filterProcessing(class CWavFile &,float * const,struct kiss_fft_cpx * const)" (?filterProcessing@BinauralConvolution@@QAEXAAVCWavFile@@QAMQAUkiss_fft_cpx@@@Z)
+TestMode.obj : error LNK2001: unresolved external symbol _kiss_fftr_alloc
+BinauralConvolution.obj : error LNK2019: unresolved external symbol _kiss_fftr referenced in function "public: void __thiscall BinauralConvolution::filterProcessing(class CWavFile &,float * const,struct kiss_fft_cpx * const)" (?filterProcessing@BinauralConvolution@@QAEXAAVCWavFile@@QAMQAUkiss_fft_cpx@@@Z)
+TestMode.obj : error LNK2001: unresolved external symbol _kiss_fftr
+BinauralConvolution.obj : error LNK2019: unresolved external symbol _kiss_fftri referenced in function "public: void __thiscall BinauralConvolution::inverseFFT(struct kiss_fft_cpx * const,float * const)" (?inverseFFT@BinauralConvolution@@QAEXQAUkiss_fft_cpx@@QAM@Z)
+TestMode.obj : error LNK2001: unresolved external symbol _kiss_fftri
+c:\users\gabriella\documents\visual studio 2015\Projects\BinauralPositioning\Debug\BinauralPositioning.exe : fatal error LNK1120: 17 unresolved externals

@@ -1,0 +1,27 @@
+﻿  AudioStream.cpp
+  BinauralConvolution.cpp
+BinauralConvolution.cpp(72): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+BinauralConvolution.cpp(183): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+BinauralConvolution.cpp(515): warning C4244: 'initializing': conversion from '__int64' to 'int', possible loss of data
+  main.cpp
+  TestMode.cpp
+TestMode.cpp(57): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+TestMode.cpp(392): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_StartStream
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_Sleep
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_GetDefaultOutputDevice
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_CloseStream
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_OpenStream
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_Terminate
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_Initialize
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_IsStreamActive
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_GetErrorText
+AudioStream.obj : error LNK2001: unresolved external symbol Pa_GetDeviceInfo
+BinauralConvolution.obj : error LNK2001: unresolved external symbol "public: long __cdecl CWavFile::getNumSamples(void)" (?getNumSamples@CWavFile@@QEAAJXZ)
+BinauralConvolution.obj : error LNK2001: unresolved external symbol "public: float __cdecl CWavFile::getSample(long)" (?getSample@CWavFile@@QEAAMJ@Z)
+BinauralConvolution.obj : error LNK2001: unresolved external symbol "public: void __cdecl CWavFile::openWav(char *)" (?openWav@CWavFile@@QEAAXPEAD@Z)
+BinauralConvolution.obj : error LNK2001: unresolved external symbol "public: __cdecl CWavFile::CWavFile(void)" (??0CWavFile@@QEAA@XZ)
+BinauralConvolution.obj : error LNK2001: unresolved external symbol kiss_fftr_alloc
+BinauralConvolution.obj : error LNK2001: unresolved external symbol kiss_fftri
+BinauralConvolution.obj : error LNK2001: unresolved external symbol kiss_fftr
+c:\users\gabriella\documents\visual studio 2015\Projects\BinauralPositioning\x64\Release\BinauralPositioning.exe : fatal error LNK1120: 17 unresolved externals
